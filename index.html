@@ -28,22 +28,52 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Feedback</a></li>
             </div>
-            <button>login/signup</button>
-            <img src="noprofile.jpg" alt="">
+
+           
+
+            </style>
+            <script language="JavaScript" type="text/javascript">
+                function login(showhide) {
+                    if (showhide == "show") {
+                        document.getElementById('popupbox').style.visibility = "visible";
+                    } else if (showhide == "hide") {
+                        document.getElementById('popupbox').style.visibility = "hidden";
+                    }
+                }
+            </script>
+            </head>
+
+            <body>
+
+                <div id="popupbox">
+                    <form name="login" action="" method="post">
+                        <center>Username:</center>
+                        <center><input name="username" size="14" /></center>
+                        <center>Password:</center>
+                        <center><input name="password" type="password" size="14" /></center>
+                        <center><input type="submit" name="submit" value="login" /></center>
+                    </form>
+                    <br />
+                    <center><a href="javascript:login('hide');">close</a></center>
+                </div>
+                <p><a href="javascript:login('show');">login</a></p>
+                <img src="noprofile.jpg" alt="">
 
 
         </nav>
         <div class="content">
-            <header class="space">  <script>
-                window.embeddedChatbotConfig = {
-                    chatbotId: "7yPbvJORxXt8TYxEG0HNu",
-                    domain: "www.chatbase.co"
-                }
-            </script>
-            <script src="https://www.chatbase.co/embed.min.js" chatbotId="7yPbvJORxXt8TYxEG0HNu"
-                domain="www.chatbase.co" defer>
-                </script></header>
-           
+            <header class="space">
+                <script>
+                    window.embeddedChatbotConfig = {
+                        chatbotId: "7yPbvJORxXt8TYxEG0HNu",
+                        domain: "www.chatbase.co"
+                    }
+                </script>
+                <script src="https://www.chatbase.co/embed.min.js" chatbotId="7yPbvJORxXt8TYxEG0HNu"
+                    domain="www.chatbase.co" defer>
+                    </script>
+            </header>
+
 
             <div class="space text">
                 we are here to treat you
